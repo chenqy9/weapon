@@ -1,0 +1,24 @@
+{
+  "name": "@chenqy9/weapon",
+  "version": "1.0.0",
+  "description": "JS工具函数集合",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenqy9/weapon.git"
+  },
+  "author": "chenqy9 <chenqy9@foxmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenqy9/weapon/issues"
+  },
+  "homepage": "https://github.com/chenqy9/weapon#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
+  },
+  "keywords": [
+    "工具",
+    "函数"
+  ]
+}
