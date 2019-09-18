@@ -1,24 +1,22 @@
 {
   "name": "@chenqy9/weapon",
-  "version": "1.0.0",
-  "description": "JS工具函数集合",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chenqy9/weapon.git"
-  },
+  "version": "0.0.1-beta",
+  "description": "JavaScript工具库",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/chenqy9/weapon.git",
   "author": "chenqy9 <chenqy9@foxmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chenqy9/weapon/issues"
-  },
-  "homepage": "https://github.com/chenqy9/weapon#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "dev": "webpack -w --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "publish": "npm run build npm publish --access public"
   },
-  "keywords": [
-    "工具",
-    "函数"
-  ]
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-merge": "^4.2.2"
+  }
 }
